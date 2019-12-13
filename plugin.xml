@@ -107,6 +107,8 @@ SOFTWARE.
         <uses-permission android:name="com.android.vending.BILLING" />
       </config-file>
 
+      <hook type="before_plugin_install" src="scripts/androidBeforeInstall.js" />
+
       <!-- Cordova >= 3.0.0 -->
       <config-file target="res/xml/config.xml" parent="/*">
         <feature name="InAppBillingPlugin">
